@@ -1,3 +1,4 @@
+/* Animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -34,6 +35,13 @@
     opacity: 1;
   }
 }
+
+/* Background Color */
+body {
+  background-color: #EFF2DD;
+}
+
+/* Header */
 .header {
   color: #BDD7D6;
   animation: 2s ease-out 0s 1 fadeIn;
@@ -46,14 +54,7 @@
   animation: 1s ease-out 0s 1 slideInTop;
 }
 
-body {
-  background-color: #EFF2DD;
-}
-
-.body {
-  text-align: center;
-}
-
+/* Buttons */
 .button {
   padding: 0px 0px;
 }
