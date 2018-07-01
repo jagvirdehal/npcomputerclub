@@ -1,3 +1,3 @@
 window.setTimeout(function(){
-  window.location.href = "home/";
+  window.location.href = "home.html";
 }, 4000);
