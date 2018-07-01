@@ -1,0 +1,77 @@
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-110%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Background Color */
+body {
+  background-color: #EFF2DD;
+}
+
+/* Header */
+.header {
+  color: #BDD7D6;
+  opacity: 1;
+  font-family: 'orderorder_light';
+  //font-size: 3.5vw;
+}
+
+.fade-in {
+  animation: 2s ease-out 0s 1 fadeIn;
+}
+
+.headerBox {
+  padding: 10px 0px;
+  background-color: #516365;
+  animation: 1s ease-out 0s 1 slideInTop;
+}
+
+/* Buttons */
+.button {
+  padding: 0px 0px;
+}
+
+.web {
+  animation: 3s ease-out 0s 1 slideInBottom;
+}
+
+.python {
+  animation: 3.5s ease-out 0s 1 slideInBottom;
+}
+
+.games {
+  animation: 4s ease-out 0s 1 slideInBottom;
+}
