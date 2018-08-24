@@ -1,0 +1,55 @@
+.web, .py, .game {
+  height: 92vh;
+
+  background-color: #8c8c8c;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border: 5px solid #333333;
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.web:hover, .py:hover, .game:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.web img, .py img, .game img {
+  width: 75%;
+  transition: 0.3s;
+}
+
+.web:hover img, .py:hover img, .game:hover img {
+  width: 80%;
+}
+
+.web {
+  background-image: url("../images/backgrounds/web.jpg");
+  border-right: 2px solid #333;
+}
+
+.py {
+  background-image: url("../images/backgrounds/web.jpg");
+  border-left: 3px solid #333;
+  border-right: 3px solid #333;
+}
+
+.game {
+  background-image: url("../images/backgrounds/web.jpg");
+  border-left: 2px solid #333;
+}
+
+.headertxt {
+  font-family: 'order_order_rounded', Helvetica;
+  color: #cecece;
+  font-size: 4vh;
+}
+
+.header {
+  height: 8vh;
+  background-color: #191919;
+}
