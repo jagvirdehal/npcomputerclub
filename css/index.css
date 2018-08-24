@@ -24,8 +24,7 @@ body {
 .textdiv {
   height: 90vh;
   width: 60vw;
-
-  /* Alignment */
+  /* alignment */
   line-height: 90vh;
   margin: auto;
   text-align: center;
@@ -33,17 +32,16 @@ body {
 
 .text {
   color: #191919;
-
+  /* fonts */
   font-family: 'order_order_rounded', Helvetica;
   font-size: 4vw;
-
-  /* Alignment */
+  /* alignment */
   display: inline-block;
   vertical-align: middle;
   line-height: 1.25;
-
+  /* text stroke */
   -webkit-text-stroke: 3px #cecece;
-
+  /* animation */
   opacity: 0;
   animation: 3s ease-out 1s 1 rise;
 }

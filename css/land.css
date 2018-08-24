@@ -1,3 +1,14 @@
+/* Fade in animation */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Header and body formatting */
 
 body {
@@ -7,6 +18,7 @@ body {
 .header {
   background-color: #191919;
   height: 8vh;
+  animation: 1s ease-out 0s 1 fadein;
 }
 
 .headertxt {
@@ -18,15 +30,20 @@ body {
 /* Grayscale animations and height of divs */
 
 .web, .py, .game {
+  /* background */
   background-color: #8c8c8c;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* border and height*/
   border: 5px solid #333333;
   height: 92vh;
+  /* filter for animation */
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  /* animation */
   transition: 0.5s;
+  animation: 1s ease-out 0s 1 fadein;
 }
 
 .web:hover, .py:hover, .game:hover {
