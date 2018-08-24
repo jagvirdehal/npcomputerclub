@@ -1,13 +1,29 @@
-.web, .py, .game {
-  height: 92vh;
+/* Header and body formatting */
 
+body {
+  background-color: #191919;
+}
+
+.header {
+  background-color: #191919;
+  height: 8vh;
+}
+
+.headertxt {
+  color: #cecece;
+  font-family: 'order_order_rounded', Helvetica;
+  font-size: 4vh;
+}
+
+/* Grayscale animations and height of divs */
+
+.web, .py, .game {
   background-color: #8c8c8c;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   border: 5px solid #333333;
-
+  height: 92vh;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.5s;
@@ -18,14 +34,7 @@
   filter: grayscale(0%);
 }
 
-.web img, .py img, .game img {
-  width: 75%;
-  transition: 0.3s;
-}
-
-.web:hover img, .py:hover img, .game:hover img {
-  width: 80%;
-}
+/* Borders and backgrounds of each div */
 
 .web {
   background-image: url("../images/backgrounds/web.jpg");
@@ -43,13 +52,13 @@
   border-left: 2px solid #333;
 }
 
-.headertxt {
-  font-family: 'order_order_rounded', Helvetica;
-  color: #cecece;
-  font-size: 4vh;
+/* Button enlargement animations */
+
+.web img, .py img, .game img {
+  width: 75%;
+  transition: 0.3s;
 }
 
-.header {
-  height: 8vh;
-  background-color: #191919;
+.web:hover img, .py:hover img, .game:hover img {
+  width: 80%;
 }
