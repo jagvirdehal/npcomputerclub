@@ -19,4 +19,17 @@ $(document).ready(function() {
   $(".target").mouseleave(function() {
     $(this).prev().prev().removeClass("grayscale");
   });
+
+  // Redirects
+  $(".web").click(function() {
+    window.location.href = "web";
+  });
+
+  $(".py").click(function() {
+    window.location.href = "py";
+  });
+
+  $(".game").click(function() {
+    window.location.href = "game";
+  });
 });
