@@ -92,14 +92,17 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .headertxt{
+    font-size: 8vw
+  }
   .web, .py, .game {
     height: 30vh;
   }
   .web img, .py img, .game img {
-    width: 40%;
+    width: 13vh;
   }
   .web:hover img, .py:hover img, .game:hover img {
-    width: 50%;
+    width: 15vh;
   }
 }
 
