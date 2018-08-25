@@ -19,18 +19,35 @@ body {
   animation: 1.6s ease-out 0s 1 fadein;
 }
 
+/* Desktop */
+@media screen and (min-width: 576px) {
+  .header {
+    height: 8vh;
+  }
+  .headertxt {
+    font-size: 4vh;
+  }
+}
+
 .header {
   background-color: #191919;
-  height: 8vh;
+  height: 10vh;
 }
 
 .headertxt {
   color: #cecece;
+
   font-family: 'order_order_rounded', Helvetica;
-  font-size: 4vh;
+  font-size: 8vw;
 }
 
 /* Div formatting*/
+
+@media screen and (min-width: 576px) {
+  .web, .py, .game {
+    height: 92vh;
+  }
+}
 
 .web, .py, .game {
   /* background */
@@ -40,23 +57,24 @@ body {
   background-position: center;
   /* border and height*/
   border: 5px solid #191919;
-  height: 92vh;
+  height: 30vh;
   /* animation */
   transition: 0.5s;
 }
 
 /* Grayscale hover effects */
-.web:hover ~ .py {
+
+.web:hover~.py {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-.web:hover ~ .game {
+.web:hover~.game {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-.py:hover ~ .game {
+.py:hover~.game {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
@@ -65,54 +83,45 @@ body {
   filter: grayscale(100%);
 }
 
-/* Borders and backgrounds of each div */
+/* Backgrounds of each div */
+
+/* Desktop backgrounds */
+
+@media screen and (min-width: 576px) {
+  .web {
+    background-image: url("../images/backgrounds/web.jpg");
+  }
+  .py {
+    background-image: url("../images/backgrounds/py.jpg");
+  }
+
+  .game {
+    background-image: url("../images/backgrounds/game.jpg");
+  }
+}
+
+/* Mobile backgrounds */
 
 .web {
-  background-image: url("../images/backgrounds/web.jpg");
-  /* border-right: 2px solid #191919; */
+  background-image: url("../images/backgrounds/webMobile.jpg");
 }
 
 .py {
   background-image: url("../images/backgrounds/py.jpg");
-  /* border-left: 3px solid #191919; */
-  /* border-right: 3px solid #191919; */
 }
 
 .game {
   background-image: url("../images/backgrounds/game.jpg");
-  /* border-left: 2px solid #191919; */
 }
 
 /* Button enlargement animations */
 
-.web img, .py img, .game img {
-  align-self: flex-end;
-  padding-bottom: 5vh;
-  transition: 0.3s;
-}
-
-@media screen and (max-width: 576px) {
-  .header {
-    height: 10vh;
-  }
-  .headertxt{
-    font-size: 8vw;
-  }
-  .web, .py, .game {
-    height: 30vh;
-  }
-  .web img, .py img, .game img {
-    padding-bottom: 1vh;
-    width: 13vh;
-  }
-  .web:hover img, .py:hover img, .game:hover img {
-    width: 15vh;
-  }
-}
+/* Desktop */
 
 @media (min-width: 576px) and (max-width: 992px) {
   .web img, .py img, .game img {
     width: 60%;
+    padding-bottom: 5vh;
   }
   .web:hover img, .py:hover img, .game:hover img {
     width: 70%;
@@ -122,8 +131,21 @@ body {
 @media (min-width: 992px) {
   .web img, .py img, .game img {
     width: 50%;
+    padding-bottom: 5vh;
   }
   .web:hover img, .py:hover img, .game:hover img {
     width: 60%;
   }
+}
+
+.web img, .py img, .game img {
+  width: 13vh;
+  padding-bottom: 1vh;
+
+  align-self: flex-end;
+  transition: 0.3s;
+}
+
+.web:hover img, .py:hover img, .game:hover img {
+  width: 15vh;
 }
