@@ -96,12 +96,13 @@ body {
     height: 10vh;
   }
   .headertxt{
-    font-size: 8vw
+    font-size: 8vw;
   }
   .web, .py, .game {
     height: 30vh;
   }
   .web img, .py img, .game img {
+    padding-bottom: 1vh;
     width: 13vh;
   }
   .web:hover img, .py:hover img, .game:hover img {
