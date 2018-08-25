@@ -76,10 +76,32 @@ body {
 .web img, .py img, .game img {
   align-self: flex-end;
   padding-bottom: 5vh;
-  width: 75%;
   transition: 0.3s;
 }
 
-.web:hover img, .py:hover img, .game:hover img {
-  width: 80%;
+@media screen and (max-width: 576px) {
+  .web img, .py img, .game img {
+    width: 40%;
+  }
+  .web:hover img, .py:hover img, .game:hover img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .web img, .py img, .game img {
+    width: 60%;
+  }
+  .web:hover img, .py:hover img, .game:hover img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .web img, .py img, .game img {
+    width: 50%;
+  }
+  .web:hover img, .py:hover img, .game:hover img {
+    width: 60%;
+  }
 }
