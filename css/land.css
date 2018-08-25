@@ -39,41 +39,44 @@ body {
   background-size: cover;
   background-position: center;
   /* border and height*/
-  border: 5px solid #333333;
+  border: 5px solid #191919;
   height: 92vh;
   /* filter for animation */
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) blur(1px);
+  filter: grayscale(100%) blur(5px);
   /* animation */
   transition: 0.5s;
 }
 
 .web:hover, .py:hover, .game:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%) blur(0px);
+  filter: grayscale(0%) blur(0px);
 }
 
 /* Borders and backgrounds of each div */
 
 .web {
   background-image: url("../images/backgrounds/web.jpg");
-  border-right: 2px solid #333;
+  /* border-right: 2px solid #191919; */
 }
 
 .py {
-  background-image: url("../images/backgrounds/web.jpg");
-  border-left: 3px solid #333;
-  border-right: 3px solid #333;
+  background-image: url("../images/backgrounds/py.jpg");
+  /* border-left: 3px solid #191919; */
+  /* border-right: 3px solid #191919; */
 }
 
 .game {
-  background-image: url("../images/backgrounds/web.jpg");
-  border-left: 2px solid #333;
+  background-image: url("../images/backgrounds/game.jpg");
+  /* border-left: 2px solid #191919; */
 }
 
 /* Button enlargement animations */
 
 .web img, .py img, .game img {
+  align-self: flex-end;
+  padding-bottom: 5vh;
+  filter: blur(0px);
   width: 75%;
   transition: 0.3s;
 }
