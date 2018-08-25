@@ -30,7 +30,7 @@ body {
   font-size: 4vh;
 }
 
-/* Div formatting */
+/* Grayscale animations and height of divs */
 
 .web, .py, .game {
   /* background */
@@ -41,6 +41,16 @@ body {
   /* border and height*/
   border: 5px solid #191919;
   height: 92vh;
+  /* filter for animation */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  /* animation */
+  transition: 0.5s;
+}
+
+.web:hover, .py:hover, .game:hover {
+  -webkit-filter: grayscale(0%) blur(0px);
+  filter: grayscale(0%) blur(0px);
 }
 
 /* Borders and backgrounds of each div */
@@ -93,16 +103,5 @@ body {
   }
   .web:hover img, .py:hover img, .game:hover img {
     width: 60%;
-  }
-
-  /* Grayscale animations on desktop */
-  .web, .py, .game {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: 0.5s;
-  }
-  .web:hover, .py:hover, .game:hover {
-    -webkit-filter: grayscale(0%) blur(0px);
-    filter: grayscale(0%) blur(0px);
   }
 }
