@@ -92,6 +92,9 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .web, .py, .game {
+    height: 30vh;
+  }
   .web img, .py img, .game img {
     width: 40%;
   }
