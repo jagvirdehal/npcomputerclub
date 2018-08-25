@@ -42,6 +42,6 @@ body {
   /* text stroke */
   -webkit-text-stroke: 0.2vw #cecece;
   /* animation */
-  opacity: 1;
+  opacity: 0;
   animation: 3s ease-out 1s 1 rise;
 }
