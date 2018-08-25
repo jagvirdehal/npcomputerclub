@@ -42,8 +42,8 @@ body {
   border: 5px solid #191919;
   height: 92vh;
   /* filter for animation */
-  -webkit-filter: grayscale(100%) blur(1px);
-  filter: grayscale(100%) blur(5px);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   /* animation */
   transition: 0.5s;
 }
@@ -76,7 +76,6 @@ body {
 .web img, .py img, .game img {
   align-self: flex-end;
   padding-bottom: 5vh;
-  filter: blur(0px);
   width: 75%;
   transition: 0.3s;
 }
