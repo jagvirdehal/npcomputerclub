@@ -40,8 +40,8 @@ body {
   vertical-align: middle;
   line-height: 1.25;
   /* text stroke */
-  -webkit-text-stroke: 3vw #cecece;
+  -webkit-text-stroke: 0.2vw #cecece;
   /* animation */
-  opacity: 0;
+  opacity: 1;
   animation: 3s ease-out 1s 1 rise;
 }
