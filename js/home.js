@@ -22,14 +22,14 @@ $(document).ready(function() {
 
   // Redirects
   $(".web").click(function() {
-    window.location.href = "web";
+    window.location.href = "web/";
   });
 
   $(".py").click(function() {
-    window.location.href = "py";
+    window.location.href = "py/";
   });
 
   $(".game").click(function() {
-    window.location.href = "game";
+    window.location.href = "game/";
   });
 });
