@@ -19,15 +19,7 @@ body {
   animation: 1.6s ease-out 0s 1 fadein;
 }
 
-/* Desktop */
-@media screen and (min-width: 576px) {
-  .header {
-    height: 8vh;
-  }
-  .headertxt {
-    font-size: 4vh;
-  }
-}
+/* Mobile header */
 
 .header {
   background-color: #191919;
@@ -41,13 +33,18 @@ body {
   font-size: 8vw;
 }
 
-/* Div formatting*/
+/* Desktop header */
 
-@media screen and (min-width: 576px) {
-  .web, .py, .game {
-    height: 92vh;
+@media (min-width: 576px) {
+  .header {
+    height: 8vh;
+  }
+  .headertxt {
+    font-size: 4vh;
   }
 }
+
+/* Div formatting*/
 
 .web, .py, .game {
   /* background */
@@ -60,6 +57,12 @@ body {
   height: 30vh;
   /* animation */
   transition: 0.5s;
+}
+
+@media (min-width: 576px) {
+  .web, .py, .game {
+    height: 92vh;
+  }
 }
 
 /* Grayscale hover effects */
@@ -83,23 +86,6 @@ body {
   filter: grayscale(100%);
 }
 
-/* Backgrounds of each div */
-
-/* Desktop backgrounds */
-
-@media screen and (min-width: 576px) {
-  .web {
-    background-image: url("../images/backgrounds/web.jpg");
-  }
-  .py {
-    background-image: url("../images/backgrounds/py.jpg");
-  }
-
-  .game {
-    background-image: url("../images/backgrounds/game.jpg");
-  }
-}
-
 /* Mobile backgrounds */
 
 .web {
@@ -114,7 +100,34 @@ body {
   background-image: url("../images/backgrounds/game.jpg");
 }
 
+/* Desktop backgrounds */
+
+@media (min-width: 576px) {
+  .web {
+    background-image: url("../images/backgrounds/web.jpg");
+  }
+  .py {
+    background-image: url("../images/backgrounds/py.jpg");
+  }
+
+  .game {
+    background-image: url("../images/backgrounds/game.jpg");
+  }
+}
+
 /* Button enlargement animations */
+
+.web img, .py img, .game img {
+  width: 13vh;
+  padding-bottom: 1vh;
+
+  align-self: flex-end;
+  transition: 0.3s;
+}
+
+.web:hover img, .py:hover img, .game:hover img {
+  width: 15vh;
+}
 
 /* Desktop */
 
@@ -136,16 +149,4 @@ body {
   .web:hover img, .py:hover img, .game:hover img {
     width: 60%;
   }
-}
-
-.web img, .py img, .game img {
-  width: 13vh;
-  padding-bottom: 1vh;
-
-  align-self: flex-end;
-  transition: 0.3s;
-}
-
-.web:hover img, .py:hover img, .game:hover img {
-  width: 15vh;
 }
