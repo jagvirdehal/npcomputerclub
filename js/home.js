@@ -30,6 +30,6 @@ $(document).ready(function() {
   });
 
   $(".game").click(function() {
-    window.location.href = "game/index.php";
+    window.location.href = "games/index.php";
   });
 });
