@@ -16,7 +16,7 @@
 
 body {
   background-color: #191919;
-  animation: 1.6s ease-out 0s 1 fadein;
+  animation: 0.1s ease-out 0s 1 fadein;
 }
 
 /* Mobile header */
