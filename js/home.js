@@ -26,10 +26,10 @@ $(document).ready(function() {
   });
 
   $(".py").click(function() {
-    window.location.href = "py/index.php";
+    window.location.href = "python/index.php";
   });
 
   $(".game").click(function() {
-    window.location.href = "games/index.php";
+    window.location.href = "videogames/index.php";
   });
 });
