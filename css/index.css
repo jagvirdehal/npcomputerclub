@@ -9,10 +9,10 @@
     transform: translateY(0);
     opacity: 1;
   }
-  90% {
+  85% {
     opacity: 1;
   }
-  100% {
+  95% {
     opacity: 0;
   }
 }
@@ -43,5 +43,5 @@ body {
   -webkit-text-stroke: 0.2vw #cecece;
   /* animation */
   opacity: 0;
-  animation: 3s ease-out 1s 1 rise;
+  animation: 2.5s ease-out 0.5s 1 rise;
 }
